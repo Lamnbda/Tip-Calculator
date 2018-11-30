@@ -13,12 +13,12 @@
 <body>
     <div class=container>
         <div id=box>
-            <h2>TIP CALCULATOR</h2>
+            <h2 id = title>TIP CALCULATOR</h2>
             <hr>
-            <p>How much was your bill?</p>
+            <p class = centerText>How much was your bill?</p>
             <p>$ <input id = "billamt" type="text" placeholder="Bill Amount"> </input></p>
             <!--Placement of the dollar sign inside of the p in addition to the input text as well allows for both to be next to eachother-->
-            <p>How much was your service?</p>
+            <p class = centerText>How much was your service?</p>
             <select name="" id="selectOption" > 
                 <option disabled selected value = "0">Please select an option</option> <!--This is a drop down list that displays a list of different -->
                 <option value=".20">20%</option>
@@ -26,10 +26,10 @@
                 <option value=".15">15%</option>
                 <option value=".13">13%</option>
             </select>
-            <p>How many people are sharing</p>
+            <p class = centerText>How many people are sharing</p>
             <input type="text" id = "inputPpl" placeholder="Number of people"></input>
             <p></p>
-            <button id = "btnCalc">Calculate</button>
+            <button id = "btnCalc" >Calculate</button>
             <div id = "tipDisplay">
                 <sup>$</sup><span id= "tip">0.00</span>
                 <small id = "each">each</small>
